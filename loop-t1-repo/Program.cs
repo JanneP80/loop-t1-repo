@@ -14,7 +14,7 @@ namespace loop_t1_repo
 
             int n = 0;
             //int runningnumber = 1;
-            int solution = 1;
+            double solution = 1;
             string message = string.Empty;
             Console.Write("Please type number for calculating N! ");
 
@@ -22,6 +22,10 @@ namespace loop_t1_repo
             if (!userinput) // incorrect input
             {
                 message = "Input is NOT a number.";
+            }
+            else if (n<0)
+            {
+                message = "Solution is not defined.";
             }
 
             else // calculation
