@@ -14,9 +14,9 @@ namespace loop_t1_repo
 
             int n = 0;
             //int runningnumber = 1;
-            int solution = 0;
+            int solution = 1;
             string message = string.Empty;
-            Console.Write("Pleas type number for calculating N!");
+            Console.Write("Please type number for calculating N! ");
 
             bool userinput = int.TryParse(Console.ReadLine(), out n);
             if (!userinput) // incorrect input
