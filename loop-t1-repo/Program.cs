@@ -13,6 +13,7 @@ namespace loop_t1_repo
             // program prints N!
 
             int n = 0;
+            //int runningnumber = 1;
             int solution = 0;
             string message = string.Empty;
             Console.Write("Pleas type number for calculating N!");
@@ -25,7 +26,13 @@ namespace loop_t1_repo
 
             else // calculation
             {
-                solution 
+                for (int runningnumber = 1; runningnumber < n+1; runningnumber++)
+                {
+                    Console.WriteLine("calculating... {0}", runningnumber); // error check line
+                    solution = solution * runningnumber;
+                                   
+                }
+                     
 
                 message = string.Format("You typed number {0}, it's N! is {1}.", n, solution);
             }
